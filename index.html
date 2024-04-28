@@ -1,0 +1,39 @@
+<html> <head> <style> body { margin:0; padding:0; font-family: Arial, Helvetica, sans-serif; background-color: #f4d03f; /* Change to your desired color */ }
+    .header { background-color: #50a3a2; color: white; padding: 10px; text-align: center; }
+    
+    .header h1 { float: left; }
+    
+    .header button { float: right; padding: 5px 10px; border: none; color: white; text-decoration: none; font-size: 17px; margin: 5px 2px; cursor: pointer; }
+    
+    .product-container { display: flex; flex-wrap: wrap; justify-content: space-around; padding: 20px; }
+    
+    .product { background-color: white; border: 1px solid #ddd; width: 300px; margin: 10px; text-align: center; padding: 15px; }
+    
+    .product img { width: 100%; }
+    
+    .product h2 { margin: 10px 0; }
+    
+    .product p { margin: 10px 0; }
+    
+    .footer { background-color: #50a3a2; color: white; text-align: center; padding: 10px; position: fixed; bottom: 0; width: 100%; }
+    
+    .contact-form { background-color: white; padding: 20px; margin: 20px 0; }
+    
+    .contact-form h2 { margin-bottom: 10px; }
+    
+    .contact-form input[type=text], .contact-form input[type=email] { width: 100%; padding: 15px; margin: 5px 0 22px 0; border: none; background: #f1f1f1; }
+    
+    .contact-form textarea { width: 100%; padding: 15px; margin: 5px 0 22px 0; border: none; background: #f1f1f1; }
+    
+    .contact-form input[type=submit] { background-color: #50a3a2; color: white; padding: 16px 20px; border: none; cursor: pointer; width: 100%; opacity: 0.9; }
+    
+    .contact-form input[type=submit]:hover { opacity: 1; } </style>
+    
+    </head> <body> <div class="header"> <h1>Nike</h1> <button>Home</button> <button>Products</button> <button>Contact</button> </div> <div class="product-container"> <div class="product"> <img src="https://i.ibb.co/1n6DTDQ/nike-shoe.jpg" alt="Nike Shoe"> <h2>Nike Air Max 270</h2> <p>The Nike Air Max 270 brings soft, bouncy cushioning to a bold, modern design. Enjoy unrivaled step-in comfort and a statement look.</p> </div> <div class="product"> <img src="https://i.ibb.co/1n6DTDQ/nike-shoe.jpg" alt="Nike Shoe"> <h2>Nike React Infinity Run Flyknit</h2> <p>The Nike React Infinity Run Flyknit is designed to help reduce injury and keep you running. Enjoy a soft, smooth, and lightweight ride.</p> </div> <div class="product"> <img src="https://i.ibb.co/1n6DTDQ/nike-shoe.jpg" alt="Nike Shoe"> <h2>Nike Joyride Run Flyknit</h2> <p>The Nike Joyride Run Flyknit offers a personalized underfoot experience with thousands of tiny beads that form to your foot for a cushioned feel.</p> </div> </div> <div class="footer"> <p>Copyright © 2023 Nike, Inc.</p> </div> <div class="contact-form"> <h2>Contact Us</h2> <form action="/submit_form" method="post"> <label for="fname">First Name</label> <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    <label for="lname">Last Name</label> <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    
+    <label for="email">Email</label> <input type="email" id="email" name="email" placeholder="Your email..">
+    
+    <label for="subject">Subject</label>
+    
+    <textarea id="subject" name="subject" placeholder="Write something.."></textarea> <input type="submit" value="Submit"> </form> </div> <script> // JavaScript code here </script> </body> </html>
